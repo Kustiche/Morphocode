@@ -6,14 +6,15 @@
 		align-items: center;
 		justify-content: space-between;
 		margin: 0 auto;
-		padding: 10px 15px;
+		padding: 0 15px;
 		min-height: 70px;
-		max-width: $container-width + px;
+		max-width: 1080px;
 	}
 
 	&__logo {
 		z-index: 5;
 		display: block;
+		line-height: 0;
 	}
 
 	&.fixed {
@@ -43,8 +44,8 @@
 	}
 
 	&__link {
-		@include adaptive-font(18, 16);
 		position: relative;
+		font-size: 16px;
 		color: var(--dove-gray-color);
 		opacity: 0.85;
 
@@ -67,18 +68,14 @@
 	}
 }
 
-@media (min-width: 767px) {
+@media (min-width: 991px) {
 	.menu__list {
 		display: flex;
 		align-items: center;
 	}
-
-	.menu__item {
-		padding: 10px 0;
-	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.menu__burger {
 		position: relative;
 		z-index: 15;
@@ -96,7 +93,7 @@
 			left: 0;
 			width: 100%;
 			height: 10%;
-			background-color: var(--light-color);
+			background-color: var(--dark-color);
 			transition: all 0.3s ease 0s;
 		}
 
@@ -119,16 +116,19 @@
 		}
 
 		&.active span {
+			background-color: var(--light-color);
 			transform: scale(0) translate(0, -50%);
 		}
 
 		&.active::before {
 			top: 50%;
+			background-color: var(--light-color);
 			transform: rotate(-45deg) translate(0, -50%);
 		}
 
 		&.active::after {
 			bottom: 50%;
+			background-color: var(--light-color);
 			transform: rotate(45deg) translate(0, 50%);
 		}
 	}
@@ -172,6 +172,6 @@
 	}
 
 	.menu__link {
-		@include adaptive-font(20, 16);
+		color: var(--light-color);
 	}
 }
