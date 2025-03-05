@@ -8,7 +8,7 @@
 		margin: 0 auto;
 		padding: 0 15px;
 		min-height: 70px;
-		max-width: 1080px;
+		max-width: $container-width + px;
 	}
 
 	&__logo {
@@ -31,6 +31,8 @@
 }
 
 .menu {
+	margin-right: 115px;
+
 	&__burger {
 		display: none;
 	}
@@ -131,6 +133,10 @@
 			background-color: var(--light-color);
 			transform: rotate(45deg) translate(0, 50%);
 		}
+	}
+
+	.menu {
+		margin-right: 0;
 	}
 
 	.menu__body {

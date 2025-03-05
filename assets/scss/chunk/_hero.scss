@@ -1,0 +1,38 @@
+.hero {
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 75px 10px 95px 0;
+		width: 100%;
+		max-width: 545px;
+	}
+
+	&__title {
+		@include adaptive-font(48, 24);
+		margin: 0;
+		margin-bottom: 20px;
+		line-height: 121%;
+		letter-spacing: 0.01em;
+		color: var(--tundora-color);
+
+		@media (min-width: 1200px) {
+			font-size: 48px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		line-height: 167%;
+
+		@media (min-width: 1440px) {
+			font-size: 18px;
+		}
+	}
+}
