@@ -1,0 +1,33 @@
+.activity {
+	padding-top: 30px;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		max-width: 1150px;
+	}
+
+	&__img {
+		margin-right: 10px;
+
+		&--hidden {
+			display: none;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 75px 70px 95px 15px;
+		max-width: 520px;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+	}
+}
