@@ -4,7 +4,7 @@
 		align-items: center;
 		justify-content: space-between;
 
-		@media (max-width: 576px) {
+		@media (max-width: 768px) {
 			flex-direction: column;
 		}
 	}
@@ -17,7 +17,7 @@
 		width: 100%;
 		max-width: 545px;
 
-		@media (max-width: 576px) {
+		@media (max-width: 768px) {
 			margin-bottom: 20px;
 			padding: 0;
 		}
@@ -37,6 +37,12 @@
 
 		@media (max-width: 576px) {
 			margin-bottom: 10px;
+		}
+	}
+
+	&__inner-img {
+		@media (max-width: 768px) {
+			max-width: 400px;
 		}
 	}
 }
