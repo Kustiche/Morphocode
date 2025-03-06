@@ -21,6 +21,10 @@
 			margin-bottom: 20px;
 			padding: 0;
 		}
+
+		@media (max-width: 576px) {
+			align-items: center;
+		}
 	}
 
 	&__title {
@@ -37,6 +41,7 @@
 
 		@media (max-width: 576px) {
 			margin-bottom: 10px;
+			text-align: center;
 		}
 	}
 

@@ -1,4 +1,4 @@
-.activity {
+.description {
 	padding-top: 30px;
 
 	&__container {
@@ -12,20 +12,8 @@
 	}
 
 	&__inner-img {
-		margin-right: 10px;
-
-		&--hidden {
-			display: none;
-		}
-
 		@media (max-width: 768px) {
-			display: none;
-			margin-right: 0;
 			max-width: 400px;
-
-			&--hidden {
-				display: block;
-			}
 		}
 	}
 
@@ -33,7 +21,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		padding: 75px 70px 95px 15px;
+		padding: 75px 25px 95px 15px;
 		max-width: 520px;
 
 		@media (max-width: 768px) {
@@ -47,11 +35,11 @@
 	}
 
 	&__title {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	&__text {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 
 		@media (max-width: 576px) {
 			margin-bottom: 20px;
