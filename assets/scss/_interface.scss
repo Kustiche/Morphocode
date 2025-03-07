@@ -1,6 +1,8 @@
 .title {
 	@include adaptive-font(36, 24);
 	margin: 0;
+	font-family: Sailec, sans-serif;
+	font-weight: 700;
 	line-height: 121%;
 	letter-spacing: 0.01em;
 	color: var(--tundora-color);
